@@ -13,6 +13,7 @@ uses
 {$R *.res}
 
 begin
+	Application.Title:='Generate combinations dictionary';
         RequireDerivedFormResource:=True;
         Application.Initialize;
 	Application.CreateForm(TmainForm, mainForm);

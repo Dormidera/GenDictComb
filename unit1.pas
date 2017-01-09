@@ -64,7 +64,6 @@ end;
 procedure TmainForm.EditItemsChange(Sender: TObject);
 begin
      UpDown1.Max := Length(EditItems.Text);
-
 end;
 
 procedure TmainForm.GenerateComb(items: string; actual: string; ammount: integer);
@@ -77,7 +76,6 @@ begin
            begin
               if rgMode.ItemIndex = 0 then WriteLn(f, actual) else Write(f, actual+#10);
               ProgressBar.Position := ProgressBar.Position + 1;
-              mainForm.Refresh;
            end;
 	end
 	else
